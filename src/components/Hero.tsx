@@ -33,9 +33,14 @@ export default function Hero() {
         <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
           Освой технологии будущего. Практический курс для тех, кто хочет работать с ИИ уже сегодня
         </p>
-        <button className="mt-8 px-8 py-3 bg-white text-black text-sm uppercase tracking-widest font-semibold hover:bg-neutral-200 transition-colors duration-300 cursor-pointer">
+        <a
+          href="https://t.me/OLGA_BOG_174"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 inline-block px-8 py-3 bg-white text-black text-sm uppercase tracking-widest font-semibold hover:bg-neutral-200 transition-colors duration-300"
+        >
           Начать обучение
-        </button>
+        </a>
       </div>
     </div>
   );
