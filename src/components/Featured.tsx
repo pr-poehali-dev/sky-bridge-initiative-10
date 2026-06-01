@@ -1,42 +1,31 @@
-import Icon from '@/components/ui/icon';
-
 export default function Featured() {
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center min-h-screen px-6 py-12 lg:py-0 bg-white">
-      <div className="flex-1 h-[400px] lg:h-[800px] mb-8 lg:mb-0 lg:order-2">
-        <img
-          src="/images/ai-collaboration.png"
-          alt="AI обучение"
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="flex-1 text-left lg:h-[800px] flex flex-col justify-center lg:mr-12 lg:order-1">
-        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-600">О курсе</h3>
-        <p className="text-2xl lg:text-4xl mb-8 text-neutral-900 leading-tight">
-          Обучение проходит в самостоятельном формате. Учись в удобном темпе, возвращайся к урокам в любое время — и не переплачивай.
-        </p>
-        <div className="flex flex-col gap-3 mb-8">
-          <div className="flex items-center gap-3">
-            <Icon name="Infinity" size={22} className="text-neutral-900 shrink-0" />
-            <span className="text-sm uppercase tracking-wide text-neutral-600">Доступ навсегда</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <Icon name="Clock" size={22} className="text-neutral-900 shrink-0" />
-            <span className="text-sm uppercase tracking-wide text-neutral-600">Свой темп</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <Icon name="BadgeCheck" size={22} className="text-neutral-900 shrink-0" />
-            <span className="text-sm uppercase tracking-wide text-neutral-600">Без переплат</span>
-          </div>
+    <div className="flex flex-col lg:flex-row min-h-screen bg-[#1a2018]">
+      <div className="flex-1 flex flex-col justify-center px-8 py-16 lg:px-20 lg:py-0">
+        <h2 className="text-6xl lg:text-8xl font-black text-[#c8f000] mb-12 leading-none uppercase" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+          КТО Я:
+        </h2>
+        <div className="flex flex-col gap-6">
+          {[
+            'меня зовут Ольга Белохвостова.',
+            'я AI креатор и эксперт по маркетплейсам',
+            'создаю рекламные фото и видео для маркетплейсов, для аккаунтов в соц.сетях с помощью ИИ без фотосессии',
+            'моя аудитория: владельцы малого бизнеса на WB/Ozon, различные бренды одежды и аксессуаров.',
+          ].map((text, i) => (
+            <div key={i} className="flex gap-4 items-start">
+              <span className="text-white text-xl mt-0.5 shrink-0">—</span>
+              <p className="text-white text-lg lg:text-xl leading-snug">{text}</p>
+            </div>
+          ))}
         </div>
-        <a
-          href="https://t.me/OLGA_BOG_174"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black cursor-pointer w-fit uppercase tracking-wide inline-block"
-        >
-          Начать обучение
-        </a>
+      </div>
+
+      <div className="flex-1 relative min-h-[500px] lg:min-h-screen">
+        <img
+          src="https://cdn.poehali.dev/projects/40144880-03b0-45bf-831f-2605356bf84f/bucket/47debcff-6d37-4cdf-807a-ff544b4f7288.jpg"
+          alt="Ольга Белохвостова"
+          className="w-full h-full object-cover object-top"
+        />
       </div>
     </div>
   );
