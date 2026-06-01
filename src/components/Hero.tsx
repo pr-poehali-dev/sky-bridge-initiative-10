@@ -26,7 +26,7 @@ export default function Hero() {
         />
       </motion.div>
 
-      <div className="relative z-10 text-center text-white">
+      <div className="relative z-10 text-center text-white absolute bottom-16 left-0 right-0">
         <h1 className="text-5xl md:text-7xl lg:text-8xl tracking-tight mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
           НЕЙРОСЕТИ
         </h1>
