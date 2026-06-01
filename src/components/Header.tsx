@@ -20,6 +20,12 @@ export default function Header({ className }: HeaderProps) {
           >
             Записаться
           </a>
+          <a
+            href="/login"
+            className="text-white hover:text-neutral-400 transition-colors duration-300 uppercase text-sm"
+          >
+            Войти
+          </a>
         </nav>
       </div>
     </header>
