@@ -29,7 +29,10 @@ export default function Featured() {
             <span className="text-sm uppercase tracking-wide text-neutral-600">Без переплат</span>
           </div>
         </div>
-        <button className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black cursor-pointer w-fit uppercase tracking-wide">
+        <button
+          onClick={() => document.getElementById('program')?.scrollIntoView({ behavior: 'smooth' })}
+          className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black cursor-pointer w-fit uppercase tracking-wide"
+        >
           Начать обучение
         </button>
       </div>
