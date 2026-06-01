@@ -9,13 +9,12 @@ export default function Featured() {
         />
       </div>
       <div className="flex-1 text-left lg:h-[800px] flex flex-col justify-center lg:mr-12 lg:order-1">
-        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-600">Чему ты научишься</h3>
+        <h3 className="uppercase mb-4 text-sm tracking-wide text-neutral-600">О курсе</h3>
         <p className="text-2xl lg:text-4xl mb-8 text-neutral-900 leading-tight">
-          От основ машинного обучения до работы с ChatGPT, Midjourney и собственными моделями — 
-          ты получишь реальные навыки, которые применяются прямо сейчас.
+          Обучение проходит в самостоятельном формате. Учись в удобном темпе, возвращайся к урокам в любое время — и не переплачивай.
         </p>
         <button className="bg-black text-white border border-black px-4 py-2 text-sm transition-all duration-300 hover:bg-white hover:text-black cursor-pointer w-fit uppercase tracking-wide">
-          Программа курса
+          Начать обучение
         </button>
       </div>
     </div>
